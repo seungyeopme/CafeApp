@@ -13,6 +13,7 @@
 		6A74DB43283A219D007C14DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A74DB41283A219D007C14DD /* Main.storyboard */; };
 		6A74DB45283A21A0007C14DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A74DB44283A21A0007C14DD /* Assets.xcassets */; };
 		6A74DB48283A21A0007C14DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A74DB46283A21A0007C14DD /* LaunchScreen.storyboard */; };
+		E3CDB1EF24312ACF75344AB6 /* Pods_CafeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF6FA2D512ED0D0C1080B5 /* Pods_CafeApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		6A74DB44283A21A0007C14DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A74DB47283A21A0007C14DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A74DB49283A21A0007C14DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92202989CA07F396475B204F /* Pods-CafeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp.release.xcconfig"; path = "Target Support Files/Pods-CafeApp/Pods-CafeApp.release.xcconfig"; sourceTree = "<group>"; };
+		B2BF6FA2D512ED0D0C1080B5 /* Pods_CafeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD835CAA9A585AD4B0126E39 /* Pods-CafeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp.debug.xcconfig"; path = "Target Support Files/Pods-CafeApp/Pods-CafeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CDB1EF24312ACF75344AB6 /* Pods_CafeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9FCA38C0EFC34F879E4FC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD835CAA9A585AD4B0126E39 /* Pods-CafeApp.debug.xcconfig */,
+				92202989CA07F396475B204F /* Pods-CafeApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A74DB2F283A219D007C14DD = {
 			isa = PBXGroup;
 			children = (
 				6A74DB3A283A219D007C14DD /* CafeApp */,
 				6A74DB39283A219D007C14DD /* Products */,
+				1C9FCA38C0EFC34F879E4FC8 /* Pods */,
+				C8781F379E0AB6D69604E8B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = CafeApp;
 			sourceTree = "<group>";
 		};
+		C8781F379E0AB6D69604E8B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2BF6FA2D512ED0D0C1080B5 /* Pods_CafeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A74DB4C283A21A0007C14DD /* Build configuration list for PBXNativeTarget "CafeApp" */;
 			buildPhases = (
+				6A45CA591901280B4D8A749B /* [CP] Check Pods Manifest.lock */,
 				6A74DB34283A219D007C14DD /* Sources */,
 				6A74DB35283A219D007C14DD /* Frameworks */,
 				6A74DB36283A219D007C14DD /* Resources */,
+				4952EF5288DCE247E60AEC38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4952EF5288DCE247E60AEC38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A45CA591901280B4D8A749B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CafeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A74DB34283A219D007C14DD /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		6A74DB4D283A21A0007C14DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD835CAA9A585AD4B0126E39 /* Pods-CafeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		6A74DB4E283A21A0007C14DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92202989CA07F396475B204F /* Pods-CafeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
