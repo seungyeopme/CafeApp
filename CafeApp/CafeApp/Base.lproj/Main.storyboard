@@ -38,48 +38,63 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glV-z0-d9Y">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glV-z0-d9Y">
                                 <rect key="frame" x="95" y="404" width="200" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="BCm-Hs-Aq0"/>
+                                    <constraint firstAttribute="width" constant="200" id="Zqr-tA-vhB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="コーヒー">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htK-OJ-4Tv">
-                                <rect key="frame" x="95" y="458" width="200" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htK-OJ-4Tv">
+                                <rect key="frame" x="95" y="456" width="200" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VaE-Et-3XP"/>
+                                    <constraint firstAttribute="height" constant="36" id="yNs-Rl-nlD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="コーヒー">
+                                <state key="normal" title="ドリンク">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydg-Np-iCc">
-                                <rect key="frame" x="95" y="509" width="200" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydg-Np-iCc">
+                                <rect key="frame" x="95" y="508" width="200" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="SQG-cR-NoG"/>
+                                    <constraint firstAttribute="height" constant="36" id="uEc-yq-y6v"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="コーヒー">
+                                <state key="normal" title="デザート">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-p7-Yqe">
-                                <rect key="frame" x="95" y="562" width="200" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-p7-Yqe">
+                                <rect key="frame" x="95" y="560" width="200" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="gE4-G4-9Th"/>
+                                    <constraint firstAttribute="width" constant="200" id="hZ0-yK-2EM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="コーヒー">
+                                <state key="normal" title="スペシャル">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88A-Y0-wyF">
-                                <rect key="frame" x="95" y="606" width="200" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88A-Y0-wyF">
+                                <rect key="frame" x="95" y="612" width="200" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Lme-RQ-zSl"/>
+                                    <constraint firstAttribute="height" constant="36" id="qW6-9X-6vy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="コーヒー">
+                                <state key="normal" title="店舗を探す">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
@@ -97,10 +112,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.97651163612796832" blue="0.49768766518730373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="glV-z0-d9Y" firstAttribute="top" secondItem="phN-zH-M2X" secondAttribute="bottom" constant="47" id="8f8-uq-ewv"/>
                             <constraint firstItem="phN-zH-M2X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9NF-Xg-rCZ"/>
                             <constraint firstItem="phN-zH-M2X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="A5m-Hy-W6a"/>
+                            <constraint firstItem="88A-Y0-wyF" firstAttribute="top" secondItem="p6d-p7-Yqe" secondAttribute="bottom" constant="16" id="EbV-fr-5Aq"/>
+                            <constraint firstItem="glV-z0-d9Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZO5-Id-LOD"/>
+                            <constraint firstItem="ydg-Np-iCc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f7t-BC-tMX"/>
+                            <constraint firstItem="htK-OJ-4Tv" firstAttribute="top" secondItem="glV-z0-d9Y" secondAttribute="bottom" constant="16" id="g33-1f-pNE"/>
+                            <constraint firstItem="p6d-p7-Yqe" firstAttribute="top" secondItem="ydg-Np-iCc" secondAttribute="bottom" constant="16" id="g9C-hZ-akq"/>
                             <constraint firstItem="phN-zH-M2X" firstAttribute="firstBaseline" secondItem="0c0-bg-Trk" secondAttribute="baseline" constant="60" symbolType="layoutAnchor" id="mD0-D4-mVd"/>
+                            <constraint firstItem="p6d-p7-Yqe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nMX-q5-lky"/>
+                            <constraint firstItem="ydg-Np-iCc" firstAttribute="top" secondItem="htK-OJ-4Tv" secondAttribute="bottom" constant="16" id="q5N-Tr-psG"/>
+                            <constraint firstItem="htK-OJ-4Tv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sRv-qU-mto"/>
                             <constraint firstItem="0c0-bg-Trk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u9k-G9-D9D"/>
+                            <constraint firstItem="88A-Y0-wyF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x5x-RU-QTY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DS0-Xc-fL5"/>
