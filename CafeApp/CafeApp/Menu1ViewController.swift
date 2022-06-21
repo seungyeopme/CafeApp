@@ -75,8 +75,17 @@ class Menu1ViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath) as! MyTableViewCell
+        cell.labelName.text = names[indexPath.row]
+        cell.labelPrice.text = prices[indexPath.row] as String
+        cell.imageViewItem.sd_setImage(with: URL(string: images[indexPath.row]))
+        cell.selectionStyle = .none
         
-        var cell = UITableViewCell();
         return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100;
     }
 }
