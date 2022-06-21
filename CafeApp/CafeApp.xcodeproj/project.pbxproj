@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A6DB025285CB3D80016BAFE /* Menu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DB024285CB3D80016BAFE /* Menu1ViewController.swift */; };
 		6A6DB0282861F9600016BAFE /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DB0272861F9600016BAFE /* MyTableViewCell.swift */; };
+		6A6DB02B286216500016BAFE /* pexels-chevanon-photography-302899.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DB02A286216500016BAFE /* pexels-chevanon-photography-302899.jpg */; };
 		6A74DB3C283A219D007C14DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74DB3B283A219D007C14DD /* AppDelegate.swift */; };
 		6A74DB3E283A219D007C14DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74DB3D283A219D007C14DD /* SceneDelegate.swift */; };
 		6A74DB40283A219D007C14DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74DB3F283A219D007C14DD /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		6A6DB024285CB3D80016BAFE /* Menu1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1ViewController.swift; sourceTree = "<group>"; };
 		6A6DB0272861F9600016BAFE /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		6A6DB02A286216500016BAFE /* pexels-chevanon-photography-302899.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pexels-chevanon-photography-302899.jpg"; sourceTree = "<group>"; };
 		6A74DB38283A219D007C14DD /* CafeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A74DB3B283A219D007C14DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A74DB3D283A219D007C14DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				6A74DB44283A21A0007C14DD /* Assets.xcassets */,
 				6A74DB46283A21A0007C14DD /* LaunchScreen.storyboard */,
 				6A74DB49283A21A0007C14DD /* Info.plist */,
+				6A6DB02A286216500016BAFE /* pexels-chevanon-photography-302899.jpg */,
 			);
 			path = CafeApp;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				6A74DB48283A21A0007C14DD /* LaunchScreen.storyboard in Resources */,
 				6A74DB45283A21A0007C14DD /* Assets.xcassets in Resources */,
 				6A74DB43283A219D007C14DD /* Main.storyboard in Resources */,
+				6A6DB02B286216500016BAFE /* pexels-chevanon-photography-302899.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
