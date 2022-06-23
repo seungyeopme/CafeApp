@@ -11,55 +11,42 @@ import SDWebImage
 
 class Menu4ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //커피메뉴
-    let names: Array<String> = ["앗메리카노",
-                                "원조커피",
-                                "바닐라라떼",
-                                "블랙펄 카페라떼",
-                                "더블에스프레소",
-                                "달달연유라떼",
-                                "빽's 라떼",
-                                "카페모카",
-                                "카라멜마끼아또",
-                                "크리미모카라떼",
-                                "코코넛커피스무디",
-                                "코코넛라떼"]
-    let prices: Array<NSString> = ["HOT : 1,500\nICED : 2,000",
-                                   "HOT : 2,000\nICED : 2,500",
-                                   "HOT : 3,000\nICED : 3,500",
-                                   "ICED : 3,500",
-                                   "HOT : 1,500",
-                                   "HOT : 2,500\nICED : 2,500",
-                                   "HOT : 2,500\nICED : 3,000",
-                                   "HOT : 3,000\nICED : 3,500",
-                                   "HOT : 3,000\nICED : 3,500",
-                                   "HOT : 3,800\nICED : 3,800",
-                                   "ICED : 4,000",
-                                   "ICED : 3,800"]
-    let images: Array<String> = ["http://paikdabang.com/wp-content/uploads/2018/05/%EC%95%97%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EC%BB%A4%ED%94%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EB%B0%94%EB%8B%90%EB%9D%BC%EB%9D%BC%EB%96%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2019/03/%EB%B8%94%EB%9E%99%ED%8E%84_%EC%B9%B4%ED%8E%98%EB%9D%BC%EB%96%BC.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EB%8D%94%EB%B8%94%EC%97%90%EC%8A%A4%ED%94%84%EB%A0%88%EC%86%8C-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%97%B0%EC%9C%A0%EB%9D%BC%EB%96%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EB%B0%B1%EC%8A%A4%EB%9D%BC%EB%96%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%B9%B4%ED%8E%98%EB%AA%A8%EC%B9%B4-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%B9%B4%EB%9D%BC%EB%A9%9C%EB%A7%88%EB%81%BC%EC%95%84%EB%98%90-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%ED%81%AC%EB%A6%AC%EB%AF%B8%EB%AA%A8%EC%B9%B4%EB%9D%BC%EB%96%BC-2.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%BD%94%EC%BD%94%EB%84%9B%EC%BB%A4%ED%94%BC%EC%8A%A4%EB%AC%B4%EB%94%94-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%BD%94%EC%BD%94%EB%84%9B%EB%9D%BC%EB%96%BC-1.jpg"]
-let messages: Array<String> = ["빽다방만의 맛과 향을 더한 100% 아라비카 로스팅 원두로 뽑아내 깊고 진한 맛의 앗!메리카노",
-                               "시원달콤한 빽다방 대표메뉴, 믹스커피 종결자!",
-                               "부드러운 우유와 달콤하고 은은한 바닐라가 조화를 이루는 음료",
-                               "흑당 베이스의 풍미 있는 달콤함과 쫄깃한 타피오카 펄, 향긋한 에스프레소가 어우러진 블랙펄카페라떼",
-                               "콜롬비아 원두를 베이스로 블랜딩한 커피의 본연의 향을 느낄 수 있는 에스프레소",
-                               "달달하고 향긋한 베트남식 연유라떼",
-                               "진한 에스프레소와 시원한 우유가 어우려져 탄생한 부드러운 빽다방 라떼",
-                               "다크한 초콜렛과 진한 에스프레소, 부드러운 우유가 더해진 달콤한 맛의 커피",
-                               "카라멜소스와 신선한 우유, 에스프레소로 맛을 낸 달콤한 빽다방 인기메뉴",
-                               "깊고 진한 커피, 달콤한 초콜릿, 부드러운 크림의 환상 조합!",
-                               "코코넛 젤리가 들어있는 달콤 고소한 코코넛커피스무디!",
-                               "구운코코넛이 씹혀 더욱 고소한 코코넛라떼!"]
+    
+    let names: Array<String> = ["완전딸기바나나",
+                                "완전초코바나나",
+                                "피스타치오빽스치노",
+                                "카라멜빽스치노",
+                                "베리크런치빽스치노",
+                                "녹차빽스치노",
+                                "원조빽스치노",
+                                "민트초코빽스치노"]
+    let prices: Array<NSString> = ["BASIC : 3,000\nSOFT : 3,500",
+                                   "BASIC : 2,800\nSOFT : 3,300",
+                                   "BASIC : 4,500\nSOFT : 5,000",
+                                   "BASIC : 4,500\nSOFT : 5,000",
+                                   "BASIC : 4,000\nSOFT : 4,500",
+                                   "BASIC : 3,000\nSOFT : 3,500",
+                                   "BASIC : 3,000\nSOFT : 3,500",
+                                   "BASIC : 3,500\nSOFT : 4,000"]
+    let images: Array<String> = ["http://paikdabang.com/wp-content/uploads/2018/05/%EC%99%84%EC%A0%84%EB%94%B8%EB%B0%94.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EC%99%84%EC%A0%84%EC%B4%88%EB%B0%94.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%ED%94%BC%EC%8A%A4%ED%83%80%EC%B9%98%EC%98%A4%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2019/05/%EC%B9%B4%EB%9D%BC%EB%A9%9C%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8.png",
+                                 "http://paikdabang.com/wp-content/uploads/2019/05/%EB%B2%A0%EB%A6%AC%ED%81%AC%EB%9F%B0%EC%B9%98%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8.png",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EB%85%B9%EC%B0%A8%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-1.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2019/02/%EB%AF%BC%ED%8A%B8%EC%B4%88%EC%BD%94-%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8.png"]
+    let messages: Array<String> = ["상큼한 딸기와 달달한 바나나의 완전 시원한 만남!",
+                                   "달콤한 초코와 달달한 바나나의 완전 시원한 만남",
+                                   "고소한 피스타치오와 진한 카카오닙스의 만남 !",
+                                   "카라멜의 진한 달콤함과 바삭한 토핑으로 더욱 풍부한 카라멜 맛을 즐길 수 있는 빽스치노",
+                                   "상큼 달콤한 딸기 밀크 베이스에 바삭한 비스켓크런치로 맛에 재미를 더한 뺵스치노",
+                                   "100% 국내산 녹차를 사용하여 부드럽고 진한 맛의 빽스치노!",
+                                   "원조커피의 시원한 변신~! 매력만점 커피 빽스치노",
+                                   "초코칩으로 더한 깊은 초콜릿의 맛과 민트의 상쾌함이 어우러진 진한 민트초코 빽스치노"]
+    
+
+
     
     
  

@@ -11,55 +11,45 @@ import SDWebImage
 
 class Menu3ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //커피메뉴
-    let names: Array<String> = ["앗메리카노",
-                                "원조커피",
-                                "바닐라라떼",
-                                "블랙펄 카페라떼",
-                                "더블에스프레소",
-                                "달달연유라떼",
-                                "빽's 라떼",
-                                "카페모카",
-                                "카라멜마끼아또",
-                                "크리미모카라떼",
-                                "코코넛커피스무디",
-                                "코코넛라떼"]
-    let prices: Array<NSString> = ["HOT : 1,500\nICED : 2,000",
-                                   "HOT : 2,000\nICED : 2,500",
+    
+    
+    let names: Array<String> = ["노말한소프트",
+                                "옥수크림",
+                                "사라다빵",
+                                "호두크런치",
+                                "빽엔나",
+                                "소세지빵",
+                                "크리미슈",
+                                "크리미단팥빵",
+                                "계란사라다빵"]
+    let prices: Array<NSString> = ["1,500",
+                                   "2,500",
+                                   "2,000",
+                                   "3,000",
                                    "HOT : 3,000\nICED : 3,500",
-                                   "ICED : 3,500",
-                                   "HOT : 1,500",
-                                   "HOT : 2,500\nICED : 2,500",
-                                   "HOT : 2,500\nICED : 3,000",
-                                   "HOT : 3,000\nICED : 3,500",
-                                   "HOT : 3,000\nICED : 3,500",
-                                   "HOT : 3,800\nICED : 3,800",
-                                   "ICED : 4,000",
-                                   "ICED : 3,800"]
-    let images: Array<String> = ["http://paikdabang.com/wp-content/uploads/2018/05/%EC%95%97%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EC%BB%A4%ED%94%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EB%B0%94%EB%8B%90%EB%9D%BC%EB%9D%BC%EB%96%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2019/03/%EB%B8%94%EB%9E%99%ED%8E%84_%EC%B9%B4%ED%8E%98%EB%9D%BC%EB%96%BC.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EB%8D%94%EB%B8%94%EC%97%90%EC%8A%A4%ED%94%84%EB%A0%88%EC%86%8C-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%97%B0%EC%9C%A0%EB%9D%BC%EB%96%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EB%B0%B1%EC%8A%A4%EB%9D%BC%EB%96%BC-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%B9%B4%ED%8E%98%EB%AA%A8%EC%B9%B4-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%B9%B4%EB%9D%BC%EB%A9%9C%EB%A7%88%EB%81%BC%EC%95%84%EB%98%90-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%ED%81%AC%EB%A6%AC%EB%AF%B8%EB%AA%A8%EC%B9%B4%EB%9D%BC%EB%96%BC-2.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%BD%94%EC%BD%94%EB%84%9B%EC%BB%A4%ED%94%BC%EC%8A%A4%EB%AC%B4%EB%94%94-1.jpg",
-         "http://paikdabang.com/wp-content/uploads/2018/05/%EC%BD%94%EC%BD%94%EB%84%9B%EB%9D%BC%EB%96%BC-1.jpg"]
-let messages: Array<String> = ["빽다방만의 맛과 향을 더한 100% 아라비카 로스팅 원두로 뽑아내 깊고 진한 맛의 앗!메리카노",
-                               "시원달콤한 빽다방 대표메뉴, 믹스커피 종결자!",
-                               "부드러운 우유와 달콤하고 은은한 바닐라가 조화를 이루는 음료",
-                               "흑당 베이스의 풍미 있는 달콤함과 쫄깃한 타피오카 펄, 향긋한 에스프레소가 어우러진 블랙펄카페라떼",
-                               "콜롬비아 원두를 베이스로 블랜딩한 커피의 본연의 향을 느낄 수 있는 에스프레소",
-                               "달달하고 향긋한 베트남식 연유라떼",
-                               "진한 에스프레소와 시원한 우유가 어우려져 탄생한 부드러운 빽다방 라떼",
-                               "다크한 초콜렛과 진한 에스프레소, 부드러운 우유가 더해진 달콤한 맛의 커피",
-                               "카라멜소스와 신선한 우유, 에스프레소로 맛을 낸 달콤한 빽다방 인기메뉴",
-                               "깊고 진한 커피, 달콤한 초콜릿, 부드러운 크림의 환상 조합!",
-                               "코코넛 젤리가 들어있는 달콤 고소한 코코넛커피스무디!",
-                               "구운코코넛이 씹혀 더욱 고소한 코코넛라떼!"]
+                                   "2,500",
+                                   "1,500",
+                                   "1,500",
+                                   "3,500"]
+    let images: Array<String> = ["http://paikdabang.com/wp-content/uploads/2018/05/%EB%85%B8%EB%A7%90%ED%95%9C%EC%86%8C%ED%94%84%ED%8A%B8.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EC%98%A5%EC%88%98%ED%81%AC%EB%A6%BC.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EC%82%AC%EB%9D%BC%EB%8B%A4%EB%B9%B5.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%ED%98%B8%EB%91%90%ED%81%AC%EB%9F%B0%EC%B9%98.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EB%BA%B5%EC%97%94%EB%82%98.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EC%86%8C%EC%84%B8%EC%A7%80%EB%B9%B5.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%ED%81%AC%EB%A6%AC%EB%AF%B8%EC%8A%88.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%ED%81%AC%EB%A6%AC%EB%AF%B8%EB%8B%A8%ED%8C%A5%EB%B9%B5.jpg",
+                                 "http://paikdabang.com/wp-content/uploads/2018/05/%EA%B3%84%EB%9E%80%EC%82%AC%EB%9D%BC%EB%8B%A4%EB%B9%B5.jpg"]
+    let messages: Array<String> = ["입안에서 부드럽게 사르륵 녹는 마성의 아이스크림",
+                                   "달콤한 아이스크림에 고소한 옥수수가 톡톡 씹히는 재미난 메뉴",
+                                   "어린시절 빵집에서 사먹던 추억의 감자 사라다빵",
+                                   "호두, 땅콩, 크런치의 바삭바삭함이 즐거운 아이스크림",
+                                   "부드러운 아이스크림과 쌉싸름한 아메리카노가 조화를 이루는 빽다방식 아포가토",
+                                   "소시지에 치즈를 듬뿍 얹고 옥수수까지 더한 소세지빵",
+                                   "비스킷과 부드러운 크림의 환상 조합!",
+                                   "달콤한 팥과 크림이 듬뿍~",
+                                   "계란이 듬뿍 들어간 부드러운 식감의 촉촉한 계란사라다빵!"]
+    
     
     
  

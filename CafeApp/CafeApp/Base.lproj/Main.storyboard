@@ -319,10 +319,10 @@
             </objects>
             <point key="canvasLocation" x="2235" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu5 View Controller-->
         <scene sceneID="5cb-7K-wI0">
             <objects>
-                <viewController id="V9p-lI-mQl" sceneMemberID="viewController">
+                <viewController id="V9p-lI-mQl" customClass="Menu5ViewController" customModule="CafeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M2T-t6-m7p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -481,7 +481,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hXx-Jf-vjf"/>
                     <connections>
-                        <outlet property="tableView" destination="hYC-4t-D7U" id="CHW-0k-Kqk"/>
+                        <outlet property="tableView" destination="hYC-4t-D7U" id="SEb-JV-Fks"/>
                     </connections>
                 </viewController>
             </objects>
