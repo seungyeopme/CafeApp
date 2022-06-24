@@ -6,15 +6,24 @@
 //
 
 import UIKit
+import WebKit
 
 class Menu5ViewController: UIViewController {
 
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //ナビゲーションバーを見せる
+        self.navigationController?.isNavigationBarHidden = false
+        
+        loadWebPage("http://seungyeop.me")
     }
     
-
-    
+    func loadWebPage(_ url:String) {
+        let myURL = URL(string: url)
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
+    }
 }
